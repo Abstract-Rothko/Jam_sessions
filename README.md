@@ -20,7 +20,7 @@ If you're curious, I'll do my best to regarly update this readme file with my pr
 
 1. [logplan_module](1_mini_project_sessions/1_logplan_module) - this is a module with 25 functions that could be used in the logistics planning department(especially packaging).
 
-2. [one_piece_quiz]() - this quiz tests you on a few basic questions on one piece and scores how well you've done.
+2. [one_piece_quiz](1_mini_project_sessions/2_one_piece_quiz) - this quiz tests you on a few basic questions on one piece and scores how well you've done.
 
 3. _In Progress_
 
