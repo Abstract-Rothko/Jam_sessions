@@ -29,6 +29,6 @@ If you're curious, I'll do my best to regarly update this readme file with my pr
 1. _In Progress_
 
 
-## Junk:
+## Junk Ideas:
 
 1. __As previously stated, it will be a collection of junk. Don't worry about it.__
