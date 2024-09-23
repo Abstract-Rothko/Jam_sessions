@@ -22,7 +22,7 @@ If you're curious, I'll do my best to regarly update this readme file with my pr
 
 2. [one_piece_quiz](1_mini_project_sessions/2_one_piece_quiz) - this quiz tests you on a few basic questions on one piece and scores how well you've done.
 
-3. _In Progress_
+3. [phoebe_adventures](1_mini_project_sessions/3_phoebe_adventures) - this is a "choose your own adventure"-style game that centres around helping Phoebe Erin Class get home.
 
 ## Practice/Study Notes:
 
