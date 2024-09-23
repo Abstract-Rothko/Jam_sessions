@@ -20,6 +20,26 @@ If you're curious, I'll do my best to regarly update this readme file with my pr
 
 1. [logplan_module](1_mini_project_sessions/1_logplan_module) - this is a module with 25 functions that could be used in the logistics planning department(especially packaging).
 
+```python
+
+# 7.
+def tot_inserts_per_day(annual_demand, lot_size, inserts_per_bin, total_production_days = 365):
+    """
+    Calculates the total inserts required per day
+    
+    :param annual_demand: total parts needed for 1 year(expected to be an integer)
+    :param lot_size: lot size of a part(expected to be an integer)
+    :param inserts_per_bin: total inserts used per bin(expected to be an integer)
+    :param total_production_days: total days of expected production(expected to be an integer)
+    :return: the total inserts required per day(expected to be a string)
+    """
+    tot_bins = annual_demand / lot_size
+    tot_bins_per_day = tot_bins / total_production_days
+    inserts_required = tot_bins_per_day * inserts_per_bin
+    return f"Inserts required per day: {inserts_required:.2f}"
+
+```
+
 2. [one_piece_quiz](1_mini_project_sessions/2_one_piece_quiz) - this quiz tests you on a few basic questions on one piece and scores how well you've done.
 
 3. [phoebe_adventures](1_mini_project_sessions/3_phoebe_adventures) - this is a "choose your own adventure"-style game that centres around helping Phoebe Erin Class get home.
