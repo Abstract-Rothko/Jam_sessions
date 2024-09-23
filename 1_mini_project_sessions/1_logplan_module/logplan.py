@@ -31,7 +31,7 @@ def log_cost_per_part(a_price, b_price, lot_size):
     return f"A-Price: {a},\nB-Price: {b}"
 
 
-# 3. Calulate the daily demand per part
+# 3.
 def daily_demand(annual_demand):
     """
     Calculates the daily demand required for a part
@@ -60,7 +60,6 @@ def rental_bin_pipeline_cost(supplier_rate, days_at_supplier, in_transit, rpsp_r
     tot_days = days_at_supplier + in_transit + in_transit_back + days_at_premise + days_at_rpsp_depot
     return f"Cost: {cost},\nTotal Days: {tot_days}"
 
-
 # 5.
 def lcl_cost(box_length, box_width, box_height, num_boxes, tare_weight, freight_rate):
     """
@@ -79,8 +78,7 @@ def lcl_cost(box_length, box_width, box_height, num_boxes, tare_weight, freight_
     cost = max(box_volume * freight_rate, weight_ton * freight_rate)
     return f"Cost: {cost}"
 
-
-# 6. Total Number of Boxes that fit into a container
+# 6.
 def tot_boxes_in_container(box_length, box_width, box_height, container_type):
     """
     Calculates the total no. of boxes that can fit into a container
@@ -110,7 +108,6 @@ def tot_boxes_in_container(box_length, box_width, box_height, container_type):
     else:
         return "Invalid Entry"
 
-
 # 7.
 def tot_inserts_per_day(annual_demand, lot_size, inserts_per_bin, total_production_days = 365):
     """
@@ -127,7 +124,6 @@ def tot_inserts_per_day(annual_demand, lot_size, inserts_per_bin, total_producti
     inserts_required = tot_bins_per_day * inserts_per_bin
     return f"Inserts required per day: {inserts_required:.2f}"
 
-
 # 8.
 def inventory_turnover_ratio(cogs, opening_stock, closing_stock):
     """
@@ -140,7 +136,6 @@ def inventory_turnover_ratio(cogs, opening_stock, closing_stock):
     """
     ratio = cogs /((opening_stock - closing_stock) / 2)
     return ratio
-
 
 # 9.
 def days_of_inventory_on_hand(avg_inventory_value, cogs):
@@ -155,7 +150,7 @@ def days_of_inventory_on_hand(avg_inventory_value, cogs):
     return doh
 
 
-# 10. Reorder Point(ROP)
+# 10.
 def reorder_point(lead_time_demand, safety_stock):
     """
     Indicates when to reorder inventory to avoid stockouts -> Reorder Point
@@ -190,7 +185,7 @@ def tot_cost_ownership(acq_cost, own_cost, post_cost):
     return tco
 
 
-# 13. Supply Chain cost-to-sales Ratio
+# 13.
 def sc_cost_to_sales_ratio(tot_sc_cost, tot_sales):
     """
     Evaluates the efficiency of the supply chain costs to total sales revenue.
@@ -202,7 +197,7 @@ def sc_cost_to_sales_ratio(tot_sc_cost, tot_sales):
     sc_ratio = round((tot_sc_cost / tot_sales) * 100, 2)
     return f"Supply Chain cost-to-sales Ratio: {sc_ratio}%"
     
-# 14. Lead Time Variability
+# 14.
 def lead_time_var(std_lead_time, avg_lead_time):
     """
     Calculates the lead time variability
@@ -287,11 +282,6 @@ def container_utilization(box_length, box_width, box_height, num_boxes, containe
         return f"Container Utilization: {utilization}%, \nEmpty Space: {empty_space}%"
     else:
         return "Invalid Entry"
-
-#print(container_utilization(1000, 1000, 1000, 20, "20ft"))        
-#print(container_utilization(1000, 1000, 1000, 38, "40ft"))
-#print(container_utilization(1000, 1000, 1000, 40, "40hc"))
-#print(container_utilization(1000, 1000, 1000, 23, "20hc"))
 
 # 19.
 from random import randint
@@ -406,12 +396,7 @@ def box_code_gen(returnable, volume, material):
             return "Invalid Entry"
     else:
         return "Invalid Entry"
-
-
-#print("Returnable Crate: ", box_code_gen(True, 0.45, "wood"))
-#print("Disposable Box: ", box_code_gen(False, 0.78, "car"))
-#print("Rental Bin: ", box_code_gen(True, 0.5, "pla"))
-
+        
 # 20.
 def pack_opt(annual_demand, milk_run_rate, old_box_length, old_box_width, old_box_height, old_lot, new_box_length, new_box_width, new_box_height, new_lot, /, truck_length = 13.62, truck_width = 2.48, truck_height = 2.70):
     """
@@ -452,10 +437,6 @@ def pack_opt(annual_demand, milk_run_rate, old_box_length, old_box_width, old_bo
     tot_cbm_savings = round(tot_old_cbm - tot_new_cbm, 2)
     return f"Transportation Savings: R{transport_savings},\nTrip Savings: {trip_savings} trips,\nBoxes Savings: {box_savings},\nCBM Savings: {tot_cbm_savings}cbm"
 
-
-#print(pack_opt(365000, 94.5, 1, 1, 2, 40, 1, 1, 2, 60))
-#print("Test:", pack_opt(365000, 94.5, 1,1, 2, 40, 1, 1, 2, 60, truck_length = 10, truck_width = 1, truck_height = 2))
-
 # 21.
 def box_opt_savings_kg(annual_demand, old_lot, old_tare_weight, new_lot,new_tare_weight):
     """
@@ -474,7 +455,6 @@ def box_opt_savings_kg(annual_demand, old_lot, old_tare_weight, new_lot,new_tare
     savings = ((annual_demand / old_lot) * old_tare_weight) - ((annual_demand / new_lot) * new_tare_weight)
     return savings
 
-
 # 22.
 def pb_weight(length, width, thickness, density):
     """
@@ -488,7 +468,6 @@ def pb_weight(length, width, thickness, density):
     """
     weight = density * length * width * thickness * 2
     return f"Weight: {weight}g"
-
 
 # 23.
 def container_payload_test(box_length, box_width, box_height, gross_weight, container_type):
@@ -536,11 +515,6 @@ def container_payload_test(box_length, box_width, box_height, gross_weight, cont
     else:
         return "Invalid Entry"
 
-
-#print("Test 1: \n", container_payload_test(1000, 1000, 1000, 100, "20ft"))
-#print("Test 2: \n", container_payload_test(1000, 1000, 1000, 650, "40ft"))
-#print("Test 3: \n", container_payload_test(1000, 1000, 1000, 200, "40hc"))
-
 # 24.
 def future_packaging_cost(current_value, inflation_rate, tot_years):
     """
@@ -553,7 +527,6 @@ def future_packaging_cost(current_value, inflation_rate, tot_years):
     """
     future_value = current_value * (1 + inflation_rate) ** tot_years
     return f"{future_value:.2f}"
-
 
 # 25.
 def net_weight(gross_weight, tare_weight):
