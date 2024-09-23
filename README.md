@@ -42,6 +42,20 @@ def tot_inserts_per_day(annual_demand, lot_size, inserts_per_bin, total_producti
 
 2. [one_piece_quiz](1_mini_project_sessions/2_one_piece_quiz) - this quiz tests you on a few basic questions on one piece and scores how well you've done.
 
+```python
+# 8. 
+giant = input("What is the name of the giant that used to take care of Nico Robin? ").lower()
+
+if giant == "jaguar d. saul":
+    score += 1
+    print("Correct!")
+elif giant == "saul":
+    score += .5
+    print("Correct!")
+else:
+    print("Incorrect!")
+```
+
 3. [phoebe_adventures](1_mini_project_sessions/3_phoebe_adventures) - this is a "choose your own adventure"-style game that centres around helping Phoebe Erin Class get home.
 
 ## Practice/Study Notes:
