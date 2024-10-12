@@ -1,3 +1,3 @@
 # TO DO:
-- [] upload files
-- [] complete Readme file
+- [ ] upload files
+- [ ] complete Readme file
