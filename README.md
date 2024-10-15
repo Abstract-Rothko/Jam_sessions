@@ -59,7 +59,7 @@ else:
 3. [phoebe_adventures](1_mini_project_sessions/3_phoebe_adventures) - this is a "choose your own adventure"-style game that centres around helping Phoebe Erin Class get home.
 4. [manga_eda](1_mini_project_sessions/4_manga_eda) - this is my first eda done on the "best-selling-manga.csv" dataset. I even made some charts!
 
-![manga publisher]()
+![manga publisher](1_mini_project_sessions/4_manga_eda/assets/Publisher_chart.png)
 
 ## Practice/Study Notes:
 
