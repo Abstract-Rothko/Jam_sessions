@@ -2,7 +2,7 @@
 import pandas as pd
 
 # Load Dataset
-df = pd.read_csv("/storage/3136-3633/Projects/2. Datasets/1. Anime & Manga/best-selling-manga.csv")
+df = pd.read_csv("/.../best-selling-manga.csv")
 
 # Data Cleaning
 # Rename Columns
