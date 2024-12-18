@@ -94,7 +94,30 @@ def check_luhn(card_no):
     else:
         return False
 ```
-2. _In progress_
+2. [tic_tac_toe]() - this is a program that allows you to play tic-tac-toe(aka X's and O's).
+
+```python
+def victory_for(board, sgn):
+            if sgn == "X":
+                who = "me"
+            elif sgn == "O":
+                who = "you"
+            else:
+                who = None
+            cross1 = cross2 = True
+            for rc in range(3):
+                if board[rc][0] == sgn and board[rc][1] == sgn and board[rc][2] == sgn:
+                    return who
+                if board[0][rc] == sgn and board[1][rc] == sgn and board[2][rc] == sgn:
+                    return who
+                if board[rc][rc] != sgn:
+                    cross1 = False
+                if board[2 - rc][2 - rc] != sgn:
+                    cross2 = False
+            if cross1 or cross2:
+                return who
+            return None
+```
 
 ## Junk Ideas:
 
