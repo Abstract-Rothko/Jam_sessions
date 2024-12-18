@@ -66,8 +66,35 @@ else:
 
 ## Practice/Study Notes:
 
-1. _In Progress_
+1. [luhn algorithm]() - this is an algorithm that can help determine if your identification number is legit or not.
 
+```python
+def check_luhn(card_no):
+    n_digits = len(card_no)
+    n_sum = 0
+    is_second = False
+    
+    for i in range(n_digits - 1, -1, -1):
+        d = ord(card_no[i]) - ord('0')
+        
+        if (is_second == True):
+            d = d * 2
+            
+        # We add two digits to handle
+        # cases that make two digits after
+        # doubling
+        
+        n_sum += d // 10
+        n_sum += d % 10
+        
+        is_second = not is_second
+        
+    if (n_sum % 10 == 0):
+        return True
+    else:
+        return False
+```
+2. _In progress_
 
 ## Junk Ideas:
 
