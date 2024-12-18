@@ -66,7 +66,7 @@ else:
 
 ## Practice/Study Notes:
 
-1. [luhn algorithm]() - this is an algorithm that can help determine if your identification number is legit or not.
+1. [luhn algorithm](2_practice_sessions/luhn_algorithm.py) - this is an algorithm that can help determine if your identification number is legit or not.
 
 ```python
 def check_luhn(card_no):
