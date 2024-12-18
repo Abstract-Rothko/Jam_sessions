@@ -94,7 +94,7 @@ def check_luhn(card_no):
     else:
         return False
 ```
-2. [tic_tac_toe]() - this is a program that allows you to play tic-tac-toe(aka X's and O's).
+2. [tic_tac_toe](2_practice_sessions/tic_tac_toe.py) - this is a program that allows you to play tic-tac-toe(aka X's and O's).
 
 ```python
 def victory_for(board, sgn):
@@ -118,6 +118,8 @@ def victory_for(board, sgn):
                 return who
             return None
 ```
+
+3. _In Progress_
 
 ## Junk Ideas:
 
