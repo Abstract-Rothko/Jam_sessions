@@ -62,7 +62,26 @@ else:
 
 ![manga publisher](1_mini_project_sessions/4_manga_eda/assets/Publisher_chart.png)
 
-5. [python_test]() - this is a python test that I developed to score on how well people do on random python questions. It was a fun experience!
+5. [python_test](1_mini_project_sessions/5_python_test) - this is a python test that I developed to score on how well people do on random python questions. It was a fun experience!
+
+```python
+def custom_pie_chart(data):
+    plt.pie(
+    x = data,
+    autopct = '%1.2f%%',
+    textprops = {'fontsize': 14},
+    colors = ['#77BFE2', 'tomato'],
+    startangle = 90,
+    counterclock = False
+    )
+    plt.title(
+    label = title,
+    fontdict = {'fontsize': 16},
+    pad = 20
+    )
+    plt.show()
+```
+![test_result](1_mini_project_sessions/5_python_test/assets/test_file.png)
 
 ## Practice/Study Notes:
 
