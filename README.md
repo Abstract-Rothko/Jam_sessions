@@ -62,7 +62,7 @@ else:
 
 ![manga publisher](1_mini_project_sessions/4_manga_eda/assets/Publisher_chart.png)
 
-5. _In Progress_
+5. [python_test]() - this is a python test that I developed to score on how well people do on random python questions. It was a fun experience!
 
 ## Practice/Study Notes:
 
