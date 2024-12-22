@@ -81,7 +81,7 @@ def custom_pie_chart(data):
     )
     plt.show()
 ```
-![test_result](1_mini_project_sessions/5_python_test/assets/test_file.png)
+![test_result](1_mini_project_sessions/5_python_test/assets/test_file.jpg)
 
 ## Practice/Study Notes:
 
