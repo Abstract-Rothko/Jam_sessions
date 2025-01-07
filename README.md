@@ -138,7 +138,30 @@ def victory_for(board, sgn):
             return None
 ```
 
-3. _In Progress_
+3. [practice_functions](2_practice_sessions/practice_functions.py) - this is a collection of smaller functions that I rewrote for practice.
+
+```python
+    """
+    This function returns number layers a 2D pyramid would make if you input the total blocks used.
+    
+    >> pyramid_height()
+    Enter total blocks used: 300
+
+    The height of a pyramid: 24
+
+    """
+    blocks = int(input("Enter total blocks used: "))
+    counter = 1
+    layers = 0
+    while blocks > 0:
+        counter += 1
+        layers += 1
+        blocks -= counter
+    print("The height of a pyramid:", layers)
+
+```
+
+4. _In Progress_
 
 ## Junk Ideas:
 
