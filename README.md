@@ -141,6 +141,7 @@ def victory_for(board, sgn):
 3. [practice_functions](2_practice_sessions/practice_functions.py) - this is a collection of smaller functions that I rewrote for practice.
 
 ```python
+def pyramid_height():
     """
     This function returns number layers a 2D pyramid would make if you input the total blocks used.
     
