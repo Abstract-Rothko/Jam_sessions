@@ -162,7 +162,21 @@ def pyramid_height():
 
 ```
 
-4. _In Progress_
+4. [class timer](2_practice_sessions/class_timer.py) - this is a class named 'Timer' that helps me familiarize myself with the concept of classes.
+
+```python
+class Timer:
+    def __init__(self, hours = 0, minutes = 0, seconds = 0):
+        self.__hours = hours
+        self.__minutes = minutes
+        self.__seconds = seconds
+        
+    def __str__(self):
+        return two_digits(self.__hours) + ":" + \
+        two_digits(self.__minutes) + ":" + \
+        two_digits(self.__seconds)
+```
+5. _In Progress_
 
 ## Junk Ideas:
 
