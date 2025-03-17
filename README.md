@@ -176,7 +176,19 @@ class Timer:
         two_digits(self.__minutes) + ":" + \
         two_digits(self.__seconds)
 ```
-5. _In Progress_
+5. [oop_essentials](2_practice_sessions/oop_essentials.py)- a file that covers all the main ideas of object-oriented programming with class examples.
+
+```python
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+        self.engine = Engine() # composition
+
+    def drive(self):
+        return self.engine.start() + f" - {self.make} {self.model} is moving."
+
+```
 
 ## Junk Ideas:
 
