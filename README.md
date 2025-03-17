@@ -176,7 +176,7 @@ class Timer:
         two_digits(self.__minutes) + ":" + \
         two_digits(self.__seconds)
 ```
-5. [oop_essentials](2_practice_sessions/oop_essentials.py)- a file that covers all the main ideas of object-oriented programming with class examples.
+5. [oop_essentials](2_practice_sessions/oop_essentials.py) - a file that covers all the main ideas of object-oriented programming with class examples.
 
 ```python
 class Car:
