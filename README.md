@@ -162,7 +162,7 @@ def pyramid_height():
 
 ```
 
-4. [class timer](2_practice_sessions/class_timer.py) - this is a class named 'Timer' that helps me familiarize myself with the concept of classes.
+4. [class_timer](2_practice_sessions/class_timer.py) - this is a class named 'Timer' that helps me familiarize myself with the concept of classes.
 
 ```python
 class Timer:
